@@ -1,0 +1,1 @@
+package com.bank.portal.repository; import com.bank.portal.domain.CustomerUser; import java.util.Optional; import org.springframework.data.jpa.repository.JpaRepository; public interface CustomerUserRepository extends JpaRepository<CustomerUser,Long>{Optional<CustomerUser> findByUsername(String username); Optional<CustomerUser> findByCustomerId(Long customerId);}

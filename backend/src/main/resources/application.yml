@@ -1,0 +1,15 @@
+spring:
+  application.name: credit-card-portal
+  datasource:
+    url: jdbc:h2:mem:creditcard;MODE=Oracle;DB_CLOSE_DELAY=-1;DATABASE_TO_LOWER=TRUE
+    username: sa
+    password: ""
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate.ddl-auto: create-drop
+    defer-datasource-initialization: true
+    open-in-view: false
+  h2.console.enabled: true
+  sql.init.mode: never
+server.port: 8080
+logging.level.com.bank: INFO

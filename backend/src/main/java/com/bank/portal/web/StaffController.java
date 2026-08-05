@@ -1,0 +1,2 @@
+package com.bank.portal.web; import com.bank.portal.service.BankingService; import com.bank.portal.web.ApiDtos.DashboardView; import lombok.RequiredArgsConstructor; import org.springframework.security.access.prepost.PreAuthorize; import org.springframework.web.bind.annotation.*;
+@RestController @RequestMapping("/api/staff") @RequiredArgsConstructor @PreAuthorize("hasRole('STAFF')") public class StaffController {private final BankingService service; @GetMapping("/dashboard") public DashboardView dashboard(){return service.staffDashboard();}}

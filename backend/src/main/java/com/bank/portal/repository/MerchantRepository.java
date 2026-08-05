@@ -1,0 +1,1 @@
+package com.bank.portal.repository; import com.bank.portal.domain.Merchant; import org.springframework.data.jpa.repository.JpaRepository; public interface MerchantRepository extends JpaRepository<Merchant,Long>{}

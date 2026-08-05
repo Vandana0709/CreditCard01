@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/FREEPDB1
+    username: credit_card_app
+    password: change-me
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate.ddl-auto: validate
+    defer-datasource-initialization: false
