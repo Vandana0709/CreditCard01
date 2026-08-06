@@ -7,3 +7,4 @@ frontend/.angular/
 backend/razorpay-local.yml
 
 backend/.maven-cache/
+backend/assistant-local.yml

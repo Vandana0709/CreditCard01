@@ -1,0 +1,4 @@
+# Copy this file to assistant-local.yml, add your xAI/Grok API key, and keep it uncommitted.
+xai:
+  api-key: ""
+  model: "grok-4.5"

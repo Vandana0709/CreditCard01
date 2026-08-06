@@ -1,7 +1,9 @@
 spring:
   application.name: credit-card-portal
   config:
-    import: optional:file:./razorpay-local.yml
+    import:
+      - optional:file:./razorpay-local.yml
+      - optional:file:./assistant-local.yml
   datasource:
     url: jdbc:h2:mem:creditcard;MODE=Oracle;DB_CLOSE_DELAY=-1;DATABASE_TO_LOWER=TRUE
     username: sa
@@ -18,3 +20,6 @@ logging.level.com.bank: INFO
 razorpay:
   key-id: ${RAZORPAY_KEY_ID:}
   key-secret: ${RAZORPAY_KEY_SECRET:}
+xai:
+  api-key: ${XAI_API_KEY:}
+  model: ${XAI_MODEL:grok-4.5}
