@@ -1,0 +1,1 @@
+package com.bank.portal.domain; public enum CustomerCardRequestStatus { PENDING, APPROVED, ISSUED, REJECTED }
