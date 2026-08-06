@@ -67,7 +67,7 @@ public class StatementPdfGenerator {
         lines.add("Customer: " + statement.getCustomer().getName());
         lines.add("Card number: " + statement.getCard().getCardNumber());
         lines.add("Statement period: " + DATE.format(statement.getPeriodStart()) + " to " + DATE.format(statement.getPeriodEnd()));
-        lines.add("Payment due date: " + DATE.format(statement.getDueDate() == null ? statement.getPeriodEnd().plusDays(15) : statement.getDueDate()));
+        lines.add("Payment due date: " + DATE.format(statement.getDueDate() == null ? statement.getPeriodEnd() : statement.getDueDate()));
         lines.add("");
         lines.add("Opening balance: " + money(statement.getOpeningBalance()));
         lines.add("Purchases: " + money(statement.getPurchases()));
