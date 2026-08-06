@@ -1,1 +1,1 @@
-package com.bank.portal.domain; public enum TransactionType { PURCHASE, PAYMENT }
+package com.bank.portal.domain; public enum TransactionType { PURCHASE, PAYMENT, CASHBACK, LATE_FEE }
